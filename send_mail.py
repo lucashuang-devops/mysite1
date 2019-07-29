@@ -16,12 +16,12 @@ if __name__ == '__main__':
     # send_mail(
     #     '来自AmazingHuang的测试邮件',
     #     '欢迎访问AmazingHuang的博客',
-    #     'wo84457593@163.com',
-    #     ['huangqing@anji-plus.com'],
+    #     'from_user@example.com',
+    #     ['to_user@example.com'],
     #     fail_silently=False,
     # )
 
-    subject, from_email, to = '来自AmazingHuang的测试邮件', 'wo84457593@163.com', 'huangqing@anji-plus.com'
+    subject, from_email, to = '来自AmazingHuang的测试邮件', 'from_user@example.com', 'to_user@example.com'
     text_content = '欢迎访问AmazingHuang的博客！'
     html_content = '<p>欢迎访问<a href="http://www.AmazingHuang.com" target=blank>www.AmazingHuang.com</a>，欢迎访问AmazingHuang的博客！</p>'
     msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
