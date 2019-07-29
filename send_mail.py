@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     subject, from_email, to = '来自AmazingHuang的测试邮件', 'wo84457593@163.com', 'huangqing@anji-plus.com'
     text_content = '欢迎访问AmazingHuang的博客！'
-    html_content = '<p>欢迎访问<a href="http://www.liujiangblog.com" target=blank>www.liujiangblog.com</a>，欢迎访问AmazingHuang的博客！</p>'
+    html_content = '<p>欢迎访问<a href="http://www.AmazingHuang.com" target=blank>www.AmazingHuang.com</a>，欢迎访问AmazingHuang的博客！</p>'
     msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
     msg.attach_alternative(html_content, "text/html")
     msg.send()
